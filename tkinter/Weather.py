@@ -38,7 +38,7 @@ def zipLookup():
 
         root.configure(background=weather_color)
 
-        myLabel = Label(root, text=city + " Air Quality " + str(quality) + " " + category, font=("Helvetica", 20), background="weather_color")
+        myLabel = Label(root, text=city + " Air Quality " + str(quality) + " " + category, font=("Helvetica", 20), background=weather_color)
         myLabel.grid(row=1, column=0, columnspan=2)
     except Exception as e:
         api = "Error..."
